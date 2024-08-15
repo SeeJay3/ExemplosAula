@@ -33,3 +33,20 @@ else if (18 >= idade && idade <65)
 {
     Console.WriteLine("O usuário deve votar.");
 }
+int[] multiplos = new int[10];
+int indice = 0;
+for (int divisor = 2; divisor < multiplos.Length; divisor++)
+{
+    if (idade % divisor == 0)
+    {
+        multiplos[indice] = divisor;
+        indice++;
+    }
+    
+}
+foreach  (int multiplo in multiplos) 
+{
+   if (multiplo != 0)
+    Console.Write(multiplo + " - ");
+}
+
